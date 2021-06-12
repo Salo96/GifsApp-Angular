@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn"  
+        *ngFor="let resultado of resultados">
+        <div class="card">
+            <!-- se coloca [src] para que angular controle q es una img si se coloca src es un text -->
+            <img [src]="resultado.images.downsized_medium.url" 
+                alt="resultado.title"
+                class="card-img-top"
+            >
+
+            <div class="card-body">
+                <p class="card-text">
+
+                    {{ resultado.title }}
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
